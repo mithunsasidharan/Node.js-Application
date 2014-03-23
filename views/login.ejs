@@ -1,0 +1,73 @@
+<head>
+   <title>Welcome</title>
+   <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="http://sscol.jebal.comuv.com/css/font.css">
+   <link rel="stylesheet" type="text/css" href="css/app.css" />
+   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+   <script type="text/javascript" src="js/jquery-scrollto.js"></script>
+   <script type="text/javascript" src="js/jquery.bar"></script>
+   <script type="text/javascript" src="js/login.js"></script>
+</head>
+<body>
+   <br/>
+   <h2>Inspired by <a href="http://nodejs.org/" target="_blank">Node.js</a> developed by <a id="tab1" href="#">Mithun Sasidharan</a></h2>
+   <div class="ribbon"></div>
+   <div class="login">
+      <h1>Let's get started.</h1>
+      <p id="loginMsg">This will be an amazing experience</p>
+      <form action="/login" method="post" autocomplete="off" >
+         <div class="input">
+            <div class="blockinput">
+               <i class="icon-envelope-alt"></i><input type="mail" placeholder="Email" name="email" value="">
+            </div>
+            <div class="blockinput">
+               <i class="icon-unlock"></i><input type="password" placeholder="Password" name="password" value="">
+            </div>
+         </div>
+         <button>Login</button>
+      </form>
+   </div>
+   <h2 style="margin-top:-120px">New ? <a id="tab2" href="#">Click here</a> to Register.<h2>
+   <hr id="registration">
+   <div class="ribbon" ></div>
+   <div class="login" >
+      <h1>Let's get started.</h1>
+      <p id="registerInfo">Fill in your details</p>
+      <form action="/register" method="post" autocomplete="off" >
+         <div class="input" id="register">
+            <div class="blockinput">
+               <i class="icon-envelope-alt"></i><input type="mail" placeholder="Email" name="user[email]" value="">
+            </div>
+            <div class="blockinput">
+               <i class="icon-user"></i><input type="text" placeholder="Fist Name" name="user[first_name]" value="">
+            </div>
+            <div class="blockinput">
+               <i class="icon-user"></i><input type="text" placeholder="Last Name" name="user[last_name]" value="">
+            </div>
+            <div class="blockinput">
+               <i class="icon-unlock"></i><input type="password" placeholder="Password" name="user[password]" value="">
+            </div>
+            <div class="blockinput">
+               <i class="icon-unlock"></i><input type="password" placeholder="Repeat Password" name="user[repeat_password]" value="">
+            </div>
+         </div>
+         <button>Register</button>
+      </form>
+   </div>
+   <h2 style="margin-top:-160px">Already have an account ? <a id="tab3" href="#">Login</a> then.<h2>
+   <hr id="credits">
+   <h2>“ First, solve the problem. Then, write the code. ”</h2>
+   <div style="padding-top:50px">
+   <div style="display:inline">
+   <div style="display:inline;float: left; margin-left: 545px; width: 250px;">
+      <div class="ribbon ior"></div>
+      <div class="login io">
+         <div class="press"></div>
+         <img src="https://d8142femxnlg1.cloudfront.net/cropped-profile-photos/4ed0b8c3dcbbf012ee05c0cba35cce04eccb06c3-t640.jpg" alt="ggIO" width="200px" height="200px" >
+         <h1>Mithun Sasidharan</h1>
+      </div>
+   </div>
+   <h2 style="margin-top:470px; position: relative; left: -400px;">Back to <a id="tab4" href="#">Login</a>.<h2>
+   <br><br>
+   </div>
+</body>

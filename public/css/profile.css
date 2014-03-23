@@ -1,0 +1,50 @@
+#logout{
+	position: relative;
+	left: 50px;
+}
+#profile{
+	position: relative;
+	left: -50px;
+}
+#home{
+	position: relative;
+	left: -150px;
+}
+
+body{
+  background: #4E535B;
+  font-family: 'Montserrat', Arial;
+  font-size: 1em;
+  min-height:400px;
+}
+h2{
+  text-align: center;
+  color: #F1F2F4;
+  text-shadow: 0 1px 0 #000;
+}
+a{
+  text-decoration: none; color: #EC5C93; 
+}
+
+h1{
+  /*font-size: 1.6em;*/
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-size: 1.2em
+}
+p{
+  font-family:'Helvetica Neue';
+  font-weight: 300;
+  color: #7B808A;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+
+hr{
+  border-top: 1px solid rgba(0,0,0,.5);
+  border-bottom: 1px solid rgba(255,255,255,.5);
+  border-left: 0;
+  border-right: 0;
+  margin-top: 30px;
+}

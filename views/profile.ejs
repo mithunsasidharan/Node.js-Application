@@ -1,0 +1,54 @@
+<head>
+   <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="http://sscol.jebal.comuv.com/css/font.css">
+   <link rel="stylesheet" type="text/css" href="css/profile.css" />
+   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+   <title>Profile Page</title>
+</head>
+<script>
+	function startTime()
+	{
+	var today=new Date();
+	var h=today.getHours();
+	var m=today.getMinutes();
+	var s=today.getSeconds();
+	// add a zero in front of numbers<10
+	m=checkTime(m);
+	s=checkTime(s);
+	document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+	t=setTimeout(function(){startTime()},500);
+	}
+
+	function checkTime(i)
+	{
+	if (i<10)
+	  {
+	  i="0" + i;
+	  }
+	return i;
+	}
+</script>
+<body onload="startTime()">
+   <br/>
+   <h2>
+	   <a href="/profile" id="home"> Home </a>
+	   <a href="/edit_profile" id="profile"> Profile </a>
+	   <a href="/logout" id="logout"> Logout</a>
+	</h2>
+	<div>
+  		<h2 style="position:relative; right:50px; top:100px"><i>Welcome, <%= user.first_name %> <%= user.last_name %></i></h2>
+  		<h2 style="position:relative; right:50px; top:100px" id="txt"></h2>
+
+<!--     	<table align="center" >
+			<tr style="width:500px;">
+			  <td><h2 style="position:relative; right:50px; top:100px">User : </h2></td>
+			  <td><h2 style="position:relative; right:50px; top:100px"><%= user.first_name %> <%= user.last_name %></h2></td>		
+
+			  </tr>
+			<tr style="width:500px;">
+			  <td><h2 style="position:relative; right:50px; top:100px">Email : </h2></td>
+			  <td><h2 style="position:relative; right:50px; top:100px"><%= user.email %></h2></td>		
+			</tr>
+		</table> -->
+   </div>
+</body>
