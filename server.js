@@ -7,11 +7,7 @@ var port = 8000;
 var passport = require('passport');
 var flash = require('connect-flash');
 var path = require('path');
-//var userModule = require('./app/models/user');
 
-
-// configuration ===============================================================
-//mongoose.connect(configDB.url); // connect to our database
 
 require('./config/passport')(passport); // pass passport for configuration
 
@@ -25,7 +21,7 @@ app.configure(function () {
     app.set('view engine', 'ejs'); // set up ejs for templating
     app.use(express.static(path.join(__dirname, 'public')));
     // required for passport
-    app.use(express.favicon("public/favicon.ico")); 
+    app.use(express.favicon("public/favicon.ico"));
     app.use(express.session({
         secret: 'mithun'
     })); // session secret

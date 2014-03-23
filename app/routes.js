@@ -1,5 +1,4 @@
 // app/routes.js
-
 var userModule = require('../app/models/user');
 
 module.exports = function (app, passport) {
@@ -17,7 +16,9 @@ module.exports = function (app, passport) {
     // show the login form
     app.get('/login', function (req, res) {
         // render the page and pass in any flash data if it exists
-        res.render('login.ejs', {message: req.flash('loginMessage')});
+        res.render('login.ejs', {
+            message: req.flash('loginMessage')
+        });
     });
 
     // process the login form
@@ -54,12 +55,12 @@ module.exports = function (app, passport) {
         if (hasNull(user))
             res.redirect('/login#registration?failed=true');
         else {
-            userModule.createNewUser(user, function(err) {
-                if(err){
+            userModule.createNewUser(user, function (err) {
+                if (err) {
                     res.redirect(500, '/internal_error');
                     console.error(err);
                 }
-     
+
                 res.redirect('/login?failed=false');
             });
         }
