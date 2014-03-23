@@ -16,14 +16,14 @@ You could also run the command :
 To restore the db, use the dump file node.sql and restore the database using the following command :
 
 ```sh
-  # mysql -u root -p[root_password] [database_name] < node.sql
+   mysql -u root -p[root_password] [database_name] < node.sql
 ``` 
 
 Make sure you have create a database with the name node :
 
 
 ```sh
-  # mysql -u [username] -p [password]
+  mysql -u [username] -p [password]
 
   mysql> create database node;
 ``` 
