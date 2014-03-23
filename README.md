@@ -13,6 +13,14 @@ You could also run the command :
   npm install package.json
 ``` 
 
+Do install the mysql dependency using the command :
+
+```sh
+  npm install mysql
+``` 
+
+You could also include the same into package.json.
+
 To restore the db, use the dump file node.sql and restore the database using the following command :
 
 ```sh
